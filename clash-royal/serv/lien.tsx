@@ -7,12 +7,19 @@ const API_KEY = process.env.CLASH_API_KEY;
 if (!API_KEY) {
   throw new Error("CLASH_API_KEY non définie dans le .env");
 }
+export interface IconUrls {
+  medium: string;
+  heroMedium: string;
+  evolutionMedium: string;
+}
+
 export interface Card {
   name: string;
   id: number;
   maxLevel: number;
   maxEvolutionLevel: number;
   elixirCost: number;
+  iconUrls: IconUrls;
   rarity: string;
 }
 

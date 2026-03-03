@@ -13,7 +13,11 @@ export default async function Home() {
             <h3>{card.name}</h3>
             <p>Rareté : {card.rarity}</p>
             <p>Elixir : {card.elixirCost}</p>
-            <p>Max Level : {card.maxLevel}</p>
+            <img
+            src={card.iconUrls.medium}
+            alt={card.name}
+            width={100}
+            />
           </div>
         ))}
       </div>
