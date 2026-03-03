@@ -1,4 +1,4 @@
-import { fetchCards, Card } from "@/serv/lien"; // adapte le chemin
+import { fetchCards, Card } from "@/serv/api"; 
 
 export default async function Home() {
   const cards: Card[] = await fetchCards();
