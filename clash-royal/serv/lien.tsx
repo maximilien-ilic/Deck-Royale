@@ -42,3 +42,31 @@ export async function fetchCards(): Promise<Card[]> {
     return [];
   }
 }
+
+export interface Player {
+  name: string;
+  tag: string;
+  trophies: number;
+  wins: number;        
+  losses: number;      
+  donations: number;   
+  clan: { name: string };          
+  arena: { name: string };        
+  currentFavouriteCard: { name: string }; 
+}
+
+
+export async function fetchPlayer(): Promise<Player> {
+  const response = await fetch('https://api.clashroyale.com/v1/players/%232RP88VLR', {
+    headers: {
+      Authorization: `Bearer ${API_KEY}`,
+    },
+    cache: 'no-store'
+  });
+
+  if (!response.ok) {
+    throw new Error(`Erreur HTTP: ${response.status}`);
+  }
+
+  return await response.json() as Player;
+}
