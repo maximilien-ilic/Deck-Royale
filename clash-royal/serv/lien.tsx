@@ -1,6 +1,4 @@
-import dotenv from 'dotenv';
 
-dotenv.config();
 
 const API_KEY = process.env.CLASH_API_KEY;
 
@@ -21,6 +19,10 @@ export interface Card {
   elixirCost: number;
   iconUrls: IconUrls;
   rarity: string;
+}
+
+export interface Lien {
+  lien : string
 }
 
 export async function fetchCards(): Promise<Card[]> {
@@ -53,6 +55,7 @@ export interface Player {
   clan: { name: string };          
   arena: { name: string };        
   currentFavouriteCard: { name: string }; 
+  currentDeck : Card[];
 }
 
 

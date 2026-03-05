@@ -1,19 +1,9 @@
-import { fetchPlayer, Player } from "@/serv/lien"; 
+import Recherche from "@/components/Recherche"
 
-
-export default async function Home() {
-  const player: Player = await fetchPlayer();
+export default function Home() {
   return (
     <main>
-      <h1>Joueur</h1>
-      <div style={{ border: "1px solid gray", padding: "10px" }}>
-        <h3>{player.name}</h3>
-        <p>Clan : {player.clan?.name}</p>
-        <p>Arena : {player.arena?.name}</p>
-        <p>Wins : {player.wins}</p>
-        <p>Losses : {player.losses}</p>
-        <p>Carte favorite : {player.currentFavouriteCard?.name}</p>
-      </div>
+      <Recherche />
     </main>
-  );
+  )
 }
