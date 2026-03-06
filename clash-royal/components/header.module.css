@@ -1,0 +1,43 @@
+.nav{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  background: linear-gradient(
+    180deg,
+    #183469 0%,
+    #0f2b5c 20%, 
+    #1a3a6e 50%, 
+    #1e4080 70%,   
+    #092f71 100%
+  );
+  padding: 2%;
+}
+
+.bouton {
+  display: inline-block;
+  padding: 12px 28px;
+
+  font-family: 'Lilita One', cursive;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+
+  background: linear-gradient(
+    180deg,
+    #ffd94a 0%,
+    #f3b500 50%,
+    #c88900 100%
+  );
+
+  border: 3px solid #7a5200;
+  border-radius: 12px;
+
+
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.bouton:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
