@@ -8,7 +8,7 @@
   border-radius : 5px;
 }
 .searchbar:focus {
-  border-color: rgb(107, 237, 1);
+  border-color: rgb(189, 199, 1);
 }
 
 .cardcontainer {
@@ -33,7 +33,7 @@
 }
 
 .card:hover {
-  border-color: rgb(107, 237, 1);
+  border-color: rgb(189, 199, 1);
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
