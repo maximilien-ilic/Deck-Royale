@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+        background:
+linear-gradient(180deg,
+  #183469 0%,
+  #0f2b5c 20%, 
+  #1a3a6e 50%, 
+  #1e4080 70%,   
+  #092f71 100%  
+);
+
+}
+
+.titre {
+    font-size: 2.5rem;
+    color : rgb(243, 218, 0);
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Lilita One', cursive;
+}
+
+.paragraph {
+    font-size: 1.2rem;
+    color : rgb(173, 171, 171);
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Lilita One', cursive;
+
+}
+
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    border : 1px solid rgb(82, 86, 6);
+    padding : 20px;
+    margin : 20px;
+}
+
+.bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color : rgb(210, 189, 3);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border : 2px solid rgb(28, 60, 1);
+    font-family: 'Lilita One', cursive;
+}
+
+.bouton:hover {
+    background-color : rgb(170, 153, 0);
+    border-color: rgb(28, 60, 1);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    animation : fadeInDown 1s ease;
+    font-family: 'Lilita One', cursive;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
